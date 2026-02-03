@@ -174,33 +174,49 @@ function ProductPage() {
       alert('Please fill your Name, Phone, and Address');
       return;
     }
+    const generateWhatsAppMessage = () => {
+      let message = `🛍️ *New Order Received* %0A%0A`;
+
+      message += `👤 Name: ${customerInfo.name}%0A`;
+      message += `📞 Phone: ${customerInfo.number}%0A`;
+      message += `📍 Address: ${customerInfo.address}%0A%0A`;
+
+      message += `📦 *Order Details:* %0A`;
+
+      cart.forEach((item, index) => {
+        message += `${index + 1}. ${item.name}%0A`;
+        message += `   Size: ${item.size || 'N/A'}%0A`;
+        message += `   Qty: ${item.quantity}%0A`;
+        message += `   Price: ৳${item.price * item.quantity}%0A%0A`;
+      });
+
+      message += `💰 *Total Amount:* ৳ ${totalPrice}%0A`;
+      message += `🚚 Delivery: Free Home Delivery`;
+
+      return message;
+    };
 
     if (cart.length === 0) {
       alert('Cart is empty! Please select products.');
       return;
     }
 
-    const formData = cart.map(item => ({
-      Name: customerInfo.name,
-      Number: customerInfo.number,
-      Address: customerInfo.address,
-      Product: item.name,
-      ProductPrice: item.price,
-      Quantity: item.quantity,
-      Size: item.size || 'N/A',
-    }));
-    console.log(formData);
+    const whatsappNumber = '8801310520842'; // 👉 এখানে দোকানের WhatsApp নাম্বার
+    const message = generateWhatsAppMessage();
 
-    // Simulate API call
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+    // WhatsApp open হবে
+    window.open(whatsappURL, '_blank');
+
+    // Existing success UI
+    setOrderPlaced(true);
     setTimeout(() => {
-      setOrderPlaced(true);
-      setTimeout(() => {
-        setOrderPlaced(false);
-        setCart([]);
-        setCustomerInfo({ name: '', number: '', address: '' });
-        setSelectedSizes({});
-      }, 3000);
-    }, 1000);
+      setOrderPlaced(false);
+      setCart([]);
+      setCustomerInfo({ name: '', number: '', address: '' });
+      setSelectedSizes({});
+    }, 3000);
   };
 
   return (
@@ -290,9 +306,6 @@ function ProductPage() {
                     {/* Fixed Height Container for Size Selection */}
                     {product.sizes.length > 0 && (
                       <div className="mb-3 sm:mb-4">
-                        <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
-                          Select Size
-                        </label>
                         <div className="grid grid-cols-4 gap-1 mb-1">
                           {product.sizes.map(size => (
                             <button
@@ -456,7 +469,7 @@ function ProductPage() {
                         type="text"
                         name="name"
                         placeholder="Enter your name"
-                        className="w-full border border-gray-300 rounded-lg p-3 sm:p-4 focus:outline-none focus:border-[#9d4edd] focus:ring-2 focus:ring-[#9d4edd]/20 transition-all text-sm sm:text-base"
+                        className="w-full border border-gray-300 rounded-lg p-3 sm:p-4 focus:outline-none focus:border-[#9d4edd] focus:ring-2 focus:ring-[#9d4edd]/20 transition-all text-sm text-black"
                         value={customerInfo.name}
                         onChange={handleCustomerChange}
                       />
@@ -471,7 +484,7 @@ function ProductPage() {
                         type="tel"
                         name="number"
                         placeholder="01XXXXXXXXX"
-                        className="w-full border border-gray-300 rounded-lg p-3 sm:p-4 focus:outline-none focus:border-[#9d4edd] focus:ring-2 focus:ring-[#9d4edd]/20 transition-all text-sm sm:text-base"
+                        className="w-full border border-gray-300 rounded-lg p-3 sm:p-4 focus:outline-none focus:border-[#9d4edd] focus:ring-2 focus:ring-[#9d4edd]/20 transition-all text-sm text-black"
                         value={customerInfo.number}
                         onChange={handleCustomerChange}
                       />
@@ -486,7 +499,7 @@ function ProductPage() {
                         type="text"
                         name="address"
                         placeholder="Full address with area"
-                        className="w-full border border-gray-300 rounded-lg p-3 sm:p-4 focus:outline-none focus:border-[#9d4edd] focus:ring-2 focus:ring-[#9d4edd]/20 transition-all text-sm sm:text-base"
+                        className="w-full border border-gray-300 rounded-lg p-3 sm:p-4 focus:outline-none focus:border-[#9d4edd] focus:ring-2 focus:ring-[#9d4edd]/20 transition-all text-sm text-black"
                         value={customerInfo.address}
                         onChange={handleCustomerChange}
                       />

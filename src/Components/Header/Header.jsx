@@ -55,12 +55,21 @@ export default function Header() {
           <div className="relative max-w-5xl mx-auto w-full">
             <div className="text-center">
               {/* Main Title - Single Line */}
-              <div className="mb-2" ref={titleRef}>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 whitespace-nowrap">
+              <div className="mb-2 text-center" ref={titleRef}>
+                <h1
+                  className="
+      font-bold text-gray-900 
+      text-center whitespace-nowrap
+      text-lg sm:text-xl md:text-4xl
+      flex items-center justify-center gap-2
+    "
+                >
                   <span className="bg-gradient-to-r from-[#5a189a] to-[#9d4edd] bg-clip-text text-transparent">
                     প্রিয়জনের জন্য
                   </span>
-                  <span className="text-gray-500 mx-2 md:mx-3">|</span>
+
+                  <span className="text-gray-500">|</span>
+
                   <span className="text-gray-800">সেরা জিনিসটাই নিন</span>
                 </h1>
               </div>
