@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="flex-1 min-w-0">
             <div className="space-y-4">
               <h3 className="text-2xl md:text-3xl font-bold text-[#5a189a]">
-                StyleHub
+                ClothBox
               </h3>
               <p className="text-gray-700 text-sm md:text-base max-w-2xl">
                 Providing premium fashion collections with the perfect blend of
@@ -27,7 +27,7 @@ const Footer = () => {
               </p>
               <div className="flex space-x-4 pt-2">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/ClothBoxbd"
                   className="text-[#5a189a] hover:text-[#7b2cbf] transition-colors transform hover:scale-110"
                   aria-label="Facebook"
                 >
@@ -70,7 +70,7 @@ const Footer = () => {
                     <FaPhone className="text-[#7b2cbf]" size={16} />
                   </div>
                   <span className="text-gray-700 text-sm md:text-base">
-                    +880 1234 567890
+                    +8801703434179
                   </span>
                 </div>
                 <div className="flex lg:justify-end items-center">
@@ -86,7 +86,7 @@ const Footer = () => {
                     <FaMapMarkerAlt className="text-[#ff9e00]" size={16} />
                   </div>
                   <span className="text-gray-700 text-sm md:text-base">
-                    Dhaka, Bangladesh
+                    Daka-mirpur-6, block-D, road-4, house-20
                   </span>
                 </div>
               </div>
@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="border-t border-[#7b2cbf]/20 mt-8 md:mt-12 pt-6 md:pt-8">
           <div className="text-center">
             <p className="text-gray-700 text-sm md:text-base">
-              © 2024 <span className="font-bold text-[#5a189a]">StyleHub</span>
+              © 2024 <span className="font-bold text-[#5a189a]">ClothBox</span>
               <span className="hidden sm:inline"> — All rights reserved.</span>
             </p>
             <p className="text-gray-600 text-xs md:text-sm mt-1">
