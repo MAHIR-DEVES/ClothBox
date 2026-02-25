@@ -33,7 +33,7 @@ const Footer = () => {
                 >
                   <FaFacebook size={22} />
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className="text-[#e63946] hover:text-[#ff6b6b] transition-colors transform hover:scale-110"
                   aria-label="Instagram"
@@ -53,7 +53,7 @@ const Footer = () => {
                   aria-label="Twitter"
                 >
                   <FaTwitter size={22} />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -73,14 +73,14 @@ const Footer = () => {
                     +8801703434179
                   </span>
                 </div>
-                <div className="flex lg:justify-end items-center">
+                {/* <div className="flex lg:justify-end items-center">
                   <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#e63946]/10 mr-3 flex-shrink-0">
                     <FaEnvelope className="text-[#e63946]" size={16} />
                   </div>
                   <span className="text-gray-700 text-sm md:text-base break-all">
                     info@stylehub.com
                   </span>
-                </div>
+                </div> */}
                 <div className="flex lg:justify-end items-start">
                   <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#ff9e00]/10 mr-3 mt-1 flex-shrink-0">
                     <FaMapMarkerAlt className="text-[#ff9e00]" size={16} />

@@ -65,48 +65,48 @@ const initialProducts = {
       sizes: ['S', 'M', 'L', 'XL'],
     },
   ],
-  Shari: [
-    {
-      id: 6,
-      name: 'Silk Jamdani Shari',
-      price: 2500,
-      image:
-        'https://cdn.sareeka.com/image/cache/data2021/net-red-designer-saree-192275-1000x1375.jpg',
-      sizes: [], // Empty array for Shari
-    },
-    {
-      id: 7,
-      name: 'Cotton Banarasi Shari',
-      price: 2800,
-      image:
-        'https://medias.utsavfashion.com/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/b/a/banarasi-pure-katan-silk-saree-in-wine-v1-shfa1592.jpg',
-      sizes: [],
-    },
-    {
-      id: 8,
-      name: 'Wedding Shari',
-      price: 3000,
-      image:
-        'https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/l/e/leheriya-printed-satin-silk-saree-in-fuchsia-v1-sws6981.jpg',
-      sizes: [],
-    },
-    {
-      id: 9,
-      name: 'Traditional Silk Shari',
-      price: 2700,
-      image:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM_qPVCRVLuTkuPVJj9OAsvYdpMXIUxY13FA&s',
-      sizes: [],
-    },
-    {
-      id: 10,
-      name: 'Designer Printed Shari',
-      price: 2900,
-      image:
-        'https://assets0.mirraw.com/images/12948304/image_zoom.jpeg?1731935642',
-      sizes: [],
-    },
-  ],
+  // Shari: [
+  //   {
+  //     id: 6,
+  //     name: 'Silk Jamdani Shari',
+  //     price: 2500,
+  //     image:
+  //       'https://cdn.sareeka.com/image/cache/data2021/net-red-designer-saree-192275-1000x1375.jpg',
+  //     sizes: [], // Empty array for Shari
+  //   },
+  //   {
+  //     id: 7,
+  //     name: 'Cotton Banarasi Shari',
+  //     price: 2800,
+  //     image:
+  //       'https://medias.utsavfashion.com/media/catalog/product/cache/1/image/500x/040ec09b1e35df139433887a97daa66f/b/a/banarasi-pure-katan-silk-saree-in-wine-v1-shfa1592.jpg',
+  //     sizes: [],
+  //   },
+  //   {
+  //     id: 8,
+  //     name: 'Wedding Shari',
+  //     price: 3000,
+  //     image:
+  //       'https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/l/e/leheriya-printed-satin-silk-saree-in-fuchsia-v1-sws6981.jpg',
+  //     sizes: [],
+  //   },
+  //   {
+  //     id: 9,
+  //     name: 'Traditional Silk Shari',
+  //     price: 2700,
+  //     image:
+  //       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM_qPVCRVLuTkuPVJj9OAsvYdpMXIUxY13FA&s',
+  //     sizes: [],
+  //   },
+  //   {
+  //     id: 10,
+  //     name: 'Designer Printed Shari',
+  //     price: 2900,
+  //     image:
+  //       'https://assets0.mirraw.com/images/12948304/image_zoom.jpeg?1731935642',
+  //     sizes: [],
+  //   },
+  // ],
 };
 
 function ProductPage() {
