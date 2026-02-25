@@ -22,7 +22,7 @@ const initialProducts = {
       price: 750,
       image:
         'https://scontent.fdac22-2.fna.fbcdn.net/v/t39.30808-6/499693508_1227504949079098_1203174491004380523_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGu_tiLStL2pptSWjI-mgSlXLVspRJ1StdctWylEnVK1z3UwRGdOufLz3W-OYybESeYtPGAJMyCV5Q72iGke4xu&_nc_ohc=FyY3TbwKTzwQ7kNvwFbZiym&_nc_oc=AdlV9vp4rj7O8mU_-ysqofcc0SdUjCIK-2mDpAW6qO44cL5z8NIOIeQECVmf8rPCUrY&_nc_zt=23&_nc_ht=scontent.fdac22-2.fna&_nc_gid=lSgB1C3kJjDs3RmWaBfKLA&oh=00_AfuCML8Ih0KRnRQkMKoG-Cy2jes5KbG1YFP-YSEh9agNFw&oe=69A36388',
-      sizes: ['S', 'M', 'L', 'XL'],
+      sizes: ['M', 'L', 'XL'],
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const initialProducts = {
       price: 750,
       image:
         'https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/499707908_1227505275745732_4579831406636083253_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGCpiqg2YjnKMcuvHmUMYsJUAbCgpF79ZpQBsKCkXv1mvr7j9-PtrIKwzBxtBNqO5GWt5M7tRWXBaZfdWDjJjim&_nc_ohc=MZBMT9r_90kQ7kNvwG-WUd4&_nc_oc=AdkGQbBTjJ-KaWVoqp_bgbeg88pR9YQoVwUPNp8_DpGqQ6dK6_WR2LrXrHaXLuh_ets&_nc_zt=23&_nc_ht=scontent.fdac22-1.fna&_nc_gid=_ylKgchZdXtDHr_kUJqkEQ&oh=00_Afsz-mNWiGw_Gxppycci9EqKvXCeFhjAuoml018MkRBkgQ&oe=69A36284',
-      sizes: ['S', 'M', 'L', 'XL'],
+      sizes: ['M', 'L', 'XL'],
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ const initialProducts = {
       price: 750,
       image:
         'https://scontent.fdac22-2.fna.fbcdn.net/v/t39.30808-6/500081943_1227506162412310_4244521211311576166_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHqPicYSRLXWfjetvu4qmSFLZtDlOmvzXgtm0OU6a_NeHK02itW506up1UUAtZmycwibk7psPYA0vhg2CR8URXh&_nc_ohc=NfXYx6_q-ZMQ7kNvwHuFpfz&_nc_oc=AdmriNv0MT-qwS4uWk2kYdaQiju3BwqCEtrT3sFGpTk4NCIsB0-ZEE7RnK241pdzxKQ&_nc_zt=23&_nc_ht=scontent.fdac22-2.fna&_nc_gid=8JArNFtjS8OpfkFIpj1fGw&oh=00_AfvQ-Xo9up4p8b_PjzHXiC0LvgKPfunBO4It0aBPN_EvCg&oe=69A3518D',
-      sizes: ['S', 'M', 'L', 'XL'],
+      sizes: ['M', 'L', 'XL'],
     },
     {
       id: 4,
@@ -46,7 +46,7 @@ const initialProducts = {
       price: 750,
       image:
         'https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/499487340_1227507592412167_1530958633377481411_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGPyaVs8TsY7dmjtsTDnYIq56lc7PU-_OLnqVzs9T784teqgcpekbMOflqkNtbMOSUm29NYLI5K6VDrnscbBiDo&_nc_ohc=VFZ8x5ZhVm4Q7kNvwH3qDaY&_nc_oc=Adk1yCWPSPikKeXje6DCgZoonoWXWKFZBUASKYQSQHR7w6GqAxlERWpAD6tDMDaryGo&_nc_zt=23&_nc_ht=scontent.fdac22-1.fna&_nc_gid=P1wm8BCDoPW_6HKGv4pPKw&oh=00_AfvfUxcUp5uQSG1ykIsmL5wQQjWnh-UXUZq37NbBd8OIPA&oe=69A33C8E',
-      sizes: ['S', 'M', 'L', 'XL'],
+      sizes: ['M', 'L', 'XL'],
     },
     {
       id: 5,
@@ -54,7 +54,7 @@ const initialProducts = {
       price: 750,
       image:
         'https://scontent.fdac22-2.fna.fbcdn.net/v/t1.15752-9/462556751_2651046325079308_5466323829021456576_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFiJUPrk8Y7CHBLy9Aq1CeRuqiAOsMrw8W6qIA6wyvDxZMMs73bcus0Bbu440VbsxaFgyJmT6Bd-GxsI2FQC-qt&_nc_ohc=NgpF0JJRgUsQ7kNvwFq70rt&_nc_oc=Adnbo-ibnApBKGc8-C34qeQZzOurRnAMdxhC7QqAj9Iefzp4Z5f4jnCXw6Y3mZAhBmU&_nc_zt=23&_nc_ht=scontent.fdac22-2.fna&oh=03_Q7cD4gHSE67OKfGG9TU4JuwOg7bB0xYlVC_wE0EmQTAX75yV3w&oe=69C4EDE4',
-      sizes: ['S', 'M', 'L', 'XL'],
+      sizes: ['M', 'L', 'XL'],
     },
     {
       id: 6,
@@ -62,7 +62,7 @@ const initialProducts = {
       price: 750,
       image:
         'https://scontent.fdac22-1.fna.fbcdn.net/v/t1.15752-9/438196288_725360089805596_1634299958204717133_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGamwcDqv_rQhnssybVn26Szn6gwguocN3OfqDCC6hw3UEAmu0-alekdJcbIAZupNr4e10Z-TGdzx8V9qoVmImt&_nc_ohc=Xook7pmeEPQQ7kNvwG-JkiJ&_nc_oc=AdnSmvrHaFhd-2_wY4ju7iEI4qgz6yWdksrhJdDdJUhbjKTL1GAe_FGA48dReGYzS7c&_nc_zt=23&_nc_ht=scontent.fdac22-1.fna&oh=03_Q7cD4gGDYAe0ZlNhGgiXGYfuTbvXGFeQdtjHT8buQ_W3z83kGw&oe=69C4D838',
-      sizes: ['S', 'M', 'L', 'XL'],
+      sizes: ['M', 'L', 'XL'],
     },
   ],
   // Shari: [
