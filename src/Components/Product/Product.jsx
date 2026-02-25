@@ -315,7 +315,7 @@ function ProductPage() {
                     {/* Fixed Height Container for Size Selection */}
                     {product.sizes.length > 0 && (
                       <div className="mb-3 sm:mb-4">
-                        <div className="grid grid-cols-4 gap-1 mb-1">
+                        <div className="grid grid-cols-3 gap-1 mb-1">
                           {product.sizes.map(size => (
                             <button
                               key={size}
